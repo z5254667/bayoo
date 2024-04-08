@@ -26,7 +26,7 @@ version = re.search(
 ).group(1)
 
 
-NAME = 'bayoo-docx'
+NAME = 'bayoo'
 VERSION = version
 DESCRIPTION = 'Create and update Microsoft Word .docx files.'
 KEYWORDS = 'docx office openxml word'
@@ -35,7 +35,7 @@ AUTHOR_EMAIL = 'ObayDaba96@googlegroups.com'
 URL = 'https://github.com/BayooG/bayooo-docx'
 LICENSE = text_of('LICENSE')
 PACKAGES = find_packages(exclude=['tests', 'tests.*'])
-PACKAGE_DATA = {'docx': ['templates/*.xml', 'templates/*.docx']}
+PACKAGE_DATA = {'bayoo': ['templates/*.xml', 'templates/*.docx']}
 
 INSTALL_REQUIRES = ['lxml>=2.3.2']
 TEST_SUITE = 'tests'
